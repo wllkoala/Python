@@ -1,7 +1,9 @@
 import pandas as pd
 
-df1 = pd.DataFrame({'ix': [10, 22, 36, 49, 57],
-                    'b': ['a', 'b', 'c', None, 'd']})
+df1 = pd.DataFrame({
+    'ix': [10, 22, 36, 49, 57],
+    'b': ['a', 'b', 'c', None, 'd']
+})
 df2 = pd.DataFrame({'ix': [10, 22, 57], 'b': ['e', None, 'f']})
 a = dict(zip(df1['ix'], df1['b']))
 print(a)

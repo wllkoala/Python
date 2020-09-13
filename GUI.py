@@ -26,8 +26,8 @@ class Application(Frame):
     def login(self):
         username = self.entry01.get()
         password = self.entry02.get()
-        print("用户名："+self.entry01.get())
-        print("密码："+self.entry02.get())
+        print("用户名：" + self.entry01.get())
+        print("密码：" + self.entry02.get())
         if username == "admin" and password == "123":
             messagebox.showinfo("登录", "登录成功")
         else:
