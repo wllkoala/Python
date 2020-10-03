@@ -1,4 +1,3 @@
-from os import linesep
 from PIL import Image, ImageDraw, ImageFont
 import argparse
 import numpy as np
