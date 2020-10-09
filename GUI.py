@@ -34,7 +34,7 @@ class Application(Frame):
             messagebox.showinfo("登录", "登陆失败")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = Tk()
     root.geometry("400x200+200+200")
     root.title("一个经典的GUI")

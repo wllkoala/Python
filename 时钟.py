@@ -62,25 +62,17 @@ def SetupClock(radius):
             Skip(-radius - 20)
             Skip(radius + 20)
             if i == 0:
-                turtle.write(int(12),
-                             align="center",
-                             font=("Courier", 14, "bold"))
+                turtle.write(int(12), align="center", font=("Courier", 14, "bold"))
             elif i == 30:
                 Skip(25)
-                turtle.write(int(i / 5),
-                             align="center",
-                             font=("Courier", 14, "bold"))
+                turtle.write(int(i / 5), align="center", font=("Courier", 14, "bold"))
                 Skip(-25)
-            elif (i == 25 or i == 35):
+            elif i == 25 or i == 35:
                 Skip(20)
-                turtle.write(int(i / 5),
-                             align="center",
-                             font=("Courier", 14, "bold"))
+                turtle.write(int(i / 5), align="center", font=("Courier", 14, "bold"))
                 Skip(-20)
             else:
-                turtle.write(int(i / 5),
-                             align="center",
-                             font=("Courier", 14, "bold"))
+                turtle.write(int(i / 5), align="center", font=("Courier", 14, "bold"))
             Skip(-radius - 20)
         else:
             turtle.dot(5)

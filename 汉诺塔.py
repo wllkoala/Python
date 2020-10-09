@@ -14,5 +14,5 @@ def hanoi(n, src, dst, mid):
 
 
 if __name__ == "__main__":
-    hanoi(4, 'A', 'C', 'B')
+    hanoi(4, "A", "C", "B")
     print(count)

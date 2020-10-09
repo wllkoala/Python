@@ -11,9 +11,9 @@ xlApp.Visible = False
 xlApp.DisplayAlerts = 0
 for name_list in name_lists:
     filename = os.path.join(os.getcwd(), "tmp", name_list)
-    exportfile = filename.split('.')[0] + '.pdf'
+    exportfile = filename.split(".")[0] + ".pdf"
     books = xlApp.Workbooks.Open(filename, False)
     books.ExportAsFixedFormat(0, exportfile)
     books.Close(False)
-    print('保存 PDF 文件：', exportfile)
+    print("保存 PDF 文件：", exportfile)
 xlApp.Quit()

@@ -1,4 +1,4 @@
-#RoseDraw.py
+# RoseDraw.py
 import turtle as t
 
 
@@ -63,7 +63,7 @@ t.left(160)
 degreeCurve(20, 2500 * s)
 degreeCurve(220, 250 * s, -1)
 # 绘制一个绿色叶子
-t.fillcolor('green')
+t.fillcolor("green")
 t.penup()
 t.goto(670 * s, -180 * s)
 t.pendown()

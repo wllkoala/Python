@@ -13,8 +13,8 @@ def ascii_art(file):
     # font = ImageFont.truetype("SourceCodePro-Bold.ttf", size=12)
     aspect_ratio = font.getsize("x")[0] / font.getsize("x")[1]
     new_im_size = np.array(
-        [im.size[0] * sample_rate,
-         im.size[1] * sample_rate * aspect_ratio]).astype(int)
+        [im.size[0] * sample_rate, im.size[1] * sample_rate * aspect_ratio]
+    ).astype(int)
 
     # Downsample the image
     im = im.resize(new_im_size)
@@ -58,8 +58,7 @@ def ascii_art(file):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Convert any image to ascii art.")
+    parser = argparse.ArgumentParser(description="Convert any image to ascii art.")
     parser.add_argument(
         "file",
         type=str,

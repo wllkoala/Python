@@ -1,4 +1,5 @@
 import turtle
+
 turtle.setup(650, 350, 200, 200)
 turtle.penup()
 turtle.fd(-250)
